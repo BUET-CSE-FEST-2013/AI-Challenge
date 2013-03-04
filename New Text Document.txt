@@ -1,0 +1,4 @@
+jar cfe BOT.jar  Main *
+
+6.2 Making Something Happ en
+If you just want to see a game running, you can unpack the game distribution binary and double click on the BOT.jar file.
