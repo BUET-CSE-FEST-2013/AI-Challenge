@@ -49,7 +49,7 @@ public  class constant {
     static int timeOut=500;
 
 
-    static int totalMove=100;
+    static int totalMove=101;
 
 
 
