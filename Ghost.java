@@ -118,6 +118,7 @@ public class Ghost
 
     public void updateBomb()
     {
+		if( boardStructure.powerFieldCheck(currentPosition)!=false )return;
         if( waitTimeToSetBomb!=0 )return;
         if( setBomb==0 )return;
 

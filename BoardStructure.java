@@ -153,6 +153,7 @@ public class BoardStructure {
         }
 
 
+
         gameConfigaration+=pieceConfigaration;
 
 
@@ -164,7 +165,7 @@ public class BoardStructure {
 
 
             String boardConfigaration="";
-            
+
 
             String foodConfigaration = "";
             String bombConfigaration = "";
@@ -200,7 +201,7 @@ public class BoardStructure {
                         continue;
                     }
   */
- 
+
 
                     Field field = grid[ xx ][ yy ];
                    //  Field field = grid[ y+i ][ x+j ];
@@ -222,13 +223,13 @@ public class BoardStructure {
         }
 
 
-        boardConfigaration+= foodConfigaration;
-        boardConfigaration+= bombConfigaration;
-        boardConfigaration+=powerConfigaration;
-        boardConfigaration+=obstacleConfigaration;
+        boardConfigaration+= foodConfigaration+"\n";
+        boardConfigaration+= bombConfigaration+"\n";
+        boardConfigaration+=powerConfigaration+"\n";
+        boardConfigaration+=obstacleConfigaration+"\n";
 
 
-        gameConfigaration+=boardConfigaration;
+        gameConfigaration+=boardConfigaration+"\n";
 
      }
 
@@ -245,7 +246,7 @@ public class BoardStructure {
 
 
             String boardConfigaration="";
-        
+
             String foodConfigaration = "";
             String bombConfigaration = "";
             String powerConfigaration = "";
@@ -303,12 +304,12 @@ public class BoardStructure {
 
 
 
-        boardConfigaration+= foodConfigaration;
-        boardConfigaration+= bombConfigaration;
-        boardConfigaration+= powerConfigaration;
-        boardConfigaration+=obstacleConfigaration;
+        boardConfigaration+= foodConfigaration+"\n";
+        boardConfigaration+= bombConfigaration+"\n";
+        boardConfigaration+= powerConfigaration+"\n";
+        boardConfigaration+=obstacleConfigaration+"\n";
 
-        gameConfigaration+=boardConfigaration;
+        gameConfigaration+=boardConfigaration+"\n";
 
         }
 
@@ -434,8 +435,8 @@ public class BoardStructure {
     {
         if( foodType==constant.foodPow )
         {
-            pacman.power=constant.foodPowPoint;
-            score[playerId]+=20;
+            pacman.power=constant.powerFieldDuration;
+            score[playerId]+=constant.foodPowPoint;
             return;
         }
         if( foodType==constant.foodPos )score[playerId]+=constant.foodPosPoint;

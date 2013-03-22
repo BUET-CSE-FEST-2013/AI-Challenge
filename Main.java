@@ -85,9 +85,10 @@ public class Main
         }
 
 
-        if(args.length==5)
+        if(args.length>=5)
         {
             constant.totalMove=Integer.valueOf(args[4]);
+            if(args.length==6)constant.debugMode=Integer.valueOf(args[5]);
         }
 
 

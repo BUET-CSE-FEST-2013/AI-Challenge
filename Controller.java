@@ -53,17 +53,18 @@ public class Controller {
         }
 
 
+        Scanner sc = new Scanner(System.in);
+
 
 
         for(totalMove=0;totalMove<constant.totalMove;totalMove++)
         {
-  /*          try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+
+
+            if(constant.debugMode==1)
+            {
+                sc.nextLine();
             }
-*/
-          //  System.out.println(totalMove);
 
             for(int playerId=0;playerId<2;playerId++)
             {
@@ -78,10 +79,14 @@ public class Controller {
             //    System.out.println(gameConfigaration);
 
                 sendConfigarationToPlayer( playerId , gameConfigaration  );
-
+				
+				if(playerId==0 && constant.debugMode==1)System.out.println("Input to Player"+playerId+":\n"+gameConfigaration);
                 String nextMove = getNextMove(playerId);
                 
-           //     System.out.println(nextMove);
+                
+                
+
+                //     System.out.println(nextMove);
 
                 checkMove.setNextMove(playerId, nextMove);
                 update.updateFood(playerId);
@@ -309,7 +314,10 @@ public class Controller {
 
         Map['Y']='1';
         Map['N']='0';
-
+		
+		if(playerId==0 && constant.debugMode==1)System.out.println("Response from Player"+playerId+":\n"+move);
+		
+		
 
         for (int i = 0; i < move.length(); i++) {
             char c = move.charAt(i);

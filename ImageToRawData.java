@@ -101,8 +101,7 @@ public class ImageToRawData {
 	  			}
 	  			
 	  		}	
-			System.out.println();
-	  
+		
   		}
         }
 	

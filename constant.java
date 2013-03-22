@@ -31,7 +31,7 @@ public  class constant {
     static int bombRange=2;
     static int waitTimeToSetBomb=20;
     static int obstacleFreezDuration=15;
-    static int powerFieldDuration=5;
+    static int powerFieldDuration=8;
 
 
   //  static Point ghostCell[][] = {{new Point(gridWidth/2-30,gridHeight/2),new Point(gridWidth/2-20,gridHeight/2),new Point(gridWidth/2-15,gridHeight/2)},{new Point(gridWidth/2+30,gridHeight/2),new Point(gridWidth/2+20,gridHeight/2),new Point(gridWidth/2+15,gridHeight/2)}};
@@ -50,7 +50,7 @@ public  class constant {
 
 
     static int totalMove=100;
-
+    static int debugMode=0;
 
 
     static File playerDir[]= new File[2];
